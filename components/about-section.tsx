@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Linkedin, Twitter, FileText } from "lucide-react"
+import { Twitter, FileText, MessageCircle } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -26,9 +26,6 @@ export default function AboutSection() {
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
-              <Button asChild>
-                <Link href="#contact">Get In Touch</Link>
-              </Button>
               <Button variant="outline" asChild>
                 <Link
                   href="https://docs.google.com/document/d/18I_f2vER_bodtedLrIuNN3pB5yL-yCca5t4xIoufkYw/edit?usp=sharing"
@@ -37,6 +34,16 @@ export default function AboutSection() {
                 >
                   <FileText className="mr-2 h-4 w-4" />
                   View CV
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link
+                  href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdiscord.gg%2FKMFVU333ty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Join Discord
                 </Link>
               </Button>
             </div>
@@ -66,17 +73,35 @@ export default function AboutSection() {
                 <span className="sr-only">Itch.io</span>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/markffrench"
+                href="https://x.com/divide_plunder"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground"
               >
-                <Linkedin className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
                 <Twitter className="h-6 w-6" />
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">Company Twitter</span>
+              </Link>
+              <Link
+                href="https://bsky.app/profile/mark-ffrench.bsky.social"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                <svg
+                  className="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" />
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                  <path d="M9 9h.01" />
+                  <path d="M15 9h.01" />
+                </svg>
+                <span className="sr-only">Bluesky</span>
               </Link>
             </div>
           </div>

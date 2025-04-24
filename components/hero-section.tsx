@@ -1,10 +1,6 @@
 "use client"
 
-import type React from "react"
-
 import { useEffect, useState, useRef } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
   const [squares, setSquares] = useState<Array<{ id: number; delay: number; duration: number }>>([])
@@ -27,14 +23,6 @@ export default function HeroSection() {
     setSquares(newSquares)
   }, [])
 
-  const scrollToGames = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
-    const gamesSection = document.getElementById("games")
-    if (gamesSection) {
-      gamesSection.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <section className="relative overflow-hidden bg-navy py-24 md:py-32">
       <div ref={backgroundRef} className="absolute inset-0 z-0 grid grid-cols-12 gap-4 p-8">
@@ -53,13 +41,6 @@ export default function HeroSection() {
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="mb-6 text-4xl font-bold tracking-tight uppercase sm:text-5xl md:text-6xl">Mark Ffrench</h1>
           <p className="mb-8 text-xl uppercase tracking-wider">Game Developer</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" asChild>
-              <Link href="#games" onClick={scrollToGames}>
-                View Portfolio
-              </Link>
-            </Button>
-          </div>
         </div>
       </div>
 

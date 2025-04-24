@@ -156,21 +156,23 @@ export default function GameShowcase() {
 function GameCard({ game }: { game: Game }) {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg">
-      <div className="relative overflow-hidden" style={{ paddingBottom: "46.7%" }}>
-        <Image
-          src={game.image || "/placeholder.svg"}
-          alt={game.title}
-          fill
-          className="object-cover transition-transform hover:scale-105"
-        />
-        {game.releaseDate && (
-          <div className="absolute top-2 right-2">
-            <Badge variant="secondary" className="bg-background/80 backdrop-blur-sm">
-              {game.releaseDate}
-            </Badge>
-          </div>
-        )}
-      </div>
+      <Link href={game.link} target="_blank" rel="noopener noreferrer" className="block">
+        <div className="relative overflow-hidden" style={{ paddingBottom: "46.7%" }}>
+          <Image
+            src={game.image || "/placeholder.svg"}
+            alt={game.title}
+            fill
+            className="object-cover transition-transform hover:scale-105"
+          />
+          {game.releaseDate && (
+            <div className="absolute top-2 right-2">
+              <Badge variant="secondary" className="bg-background/80 backdrop-blur-sm">
+                {game.releaseDate}
+              </Badge>
+            </div>
+          )}
+        </div>
+      </Link>
       <CardHeader>
         <CardTitle className="uppercase">{game.title}</CardTitle>
         {game.press && game.press.length > 0 && (

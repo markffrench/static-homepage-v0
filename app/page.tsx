@@ -1,10 +1,11 @@
 import Link from "next/link"
-import { Github, Mail, ExternalLink } from "lucide-react"
+import { Github, Mail, ExternalLink, Twitter, Linkedin, Youtube } from "lucide-react"
 import GameShowcase from "@/components/game-showcase"
 import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
 import ContactSection from "@/components/contact-section"
 import CareerHighlights from "@/components/career-highlights"
+import CompanyInfo from "@/components/company-info"
 
 export default function Home() {
   return (
@@ -31,6 +32,15 @@ export default function Home() {
                 CV
               </Link>
               <Link
+                href="https://store.steampowered.com/developer/divide-the-plunder"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium uppercase hover:text-primary flex items-center gap-1"
+              >
+                Steam
+                <ExternalLink className="h-3 w-3" />
+              </Link>
+              <Link
                 href="https://mark-ffrench.itch.io/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,6 +55,7 @@ export default function Home() {
       </header>
       <main className="flex-1">
         <HeroSection />
+        <CompanyInfo />
         <GameShowcase />
         <CareerHighlights />
         <AboutSection />
@@ -57,13 +68,40 @@ export default function Home() {
           </p>
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com"
+              href="https://github.com/markffrench/"
               target="_blank"
               rel="noreferrer"
               className="text-muted-foreground hover:text-foreground"
             >
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/markffrench"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="https://x.com/Mark_Ff"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Twitter className="h-5 w-5" />
+              <span className="sr-only">Twitter</span>
+            </Link>
+            <Link
+              href="https://www.youtube.com/@dividetheplunder2440"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Youtube className="h-5 w-5" />
+              <span className="sr-only">YouTube</span>
             </Link>
             <Link href="mailto:contact@dividetheplunder.com" className="text-muted-foreground hover:text-foreground">
               <Mail className="h-5 w-5" />
