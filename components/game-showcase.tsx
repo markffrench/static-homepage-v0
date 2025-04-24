@@ -28,7 +28,7 @@ const games: Game[] = [
     title: "PROVERBS",
     description:
       "A sequel to Mega Mosaic. A huge, meditative, minesweeper-like puzzle, where you fill in a pixelart recreation of the 1559 painting Netherlandish Proverbs by Bruegel the Elder.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/Header_Capsule.png",
     tags: ["Puzzle", "Meditative", "Pixel Art"],
     link: "https://mark-ffrench.itch.io/proverbs",
     featured: true,
@@ -40,7 +40,7 @@ const games: Game[] = [
     title: "MEGA MOSAIC",
     description:
       "A meditative puzzle game where players slowly solve an enormous minesweeper-like puzzle. As players complete different regions of the puzzle, they're rewarded with pixel art illustrations that reveal themselves, as well as earning nearly 100 achievements for various challenges.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/mega-mosaic-2915950-header-EMetVM1lOmPxrixBwSf3k0Du2jCdcO.jpg",
     tags: ["Mosaic", "Puzzle", "Pixel Art"],
     link: "https://mark-ffrench.itch.io/mega-mosaic",
     featured: true,
@@ -51,7 +51,7 @@ const games: Game[] = [
     title: "LOGIC TOWN",
     description:
       "A cute and casual logic puzzle game. Players journey through 12 different themed areas of a seaside town meeting different animal characters that live there. They'll solve challenging Logic Puzzles, and get to redecorate dioramas of different shops and venues in the town that are in need of repair.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/logic-town-2333240-header-LHUKWOZooVQArF8aj8FIr60qJkYm8G.jpg",
     tags: ["Logic", "Adventure", "PC"],
     link: "https://mark-ffrench.itch.io/logic-town",
     featured: true,
@@ -62,7 +62,7 @@ const games: Game[] = [
     title: "2024: MOSAIC RETROSPECTIVE",
     description:
       "A free charity-fundraising mosaic game that I released to raise money for UNICEF. The game features a round-up of major global news stories from 2024.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/2024-mosaic-retrospective-3380760-header-gHyWM20YoCw585kzOMOtdszgBWkaAD.jpg",
     tags: ["Mosaic", "Pixel Art", "Charity"],
     link: "https://mark-ffrench.itch.io/",
     releaseDate: "Dec 2024",
@@ -72,7 +72,7 @@ const games: Game[] = [
     title: "MOSAIC OF THE PHARAOHS",
     description:
       "Another Mosaic puzzle game focusing on Ancient Egypt. This was a slight shadow drop on steam, so it hasn't performed as well as the other titles yet, but I'm optimistic that it will do well in the longer term.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/mosaic-of-the-pharaohs-3530670-header-PVskn6aoxWVjmYGjcXETzzWYjxb9NH.jpg",
     tags: ["Historical", "Educational", "Mosaic"],
     link: "https://mark-ffrench.itch.io/",
     releaseDate: "Mar 2025",
@@ -82,7 +82,7 @@ const games: Game[] = [
     title: "SH*THEAD",
     description:
       "A multiplayer focused card game based on the classic backpacker and playground favourite. Players compete against up to 3 opponents in each match, where they can emote and chat and show off their newly earned characters, while playing the game.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/shthead-2809950-header-IIQxW9LDmYuQ2SWOtV0ulVFM67RLmy.jpg",
     tags: ["Card Game", "Multiplayer", "Coming Soon"],
     link: "https://mark-ffrench.itch.io/",
     releaseDate: "TBA",

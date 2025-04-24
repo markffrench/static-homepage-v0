@@ -23,7 +23,7 @@ const careerProjects: CareerProject[] = [
     period: "2023 - Present",
     description:
       "Led a team of 4-6 developers from the initial PC/Mac launch through to Mobile, Nintendo Switch, Xbox and PlayStation versions, and 10 DLC expansions. The game features real-time and asynchronous multiplayer, with a competitive tiered leaderboard system.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/Header_Capsule.png",
     technologies: ["Unity", "C#", "Multiplayer", "Cross-Platform"],
     achievements: ["Launched on 6 platforms", "10 DLC expansions", "Real-time & asynchronous multiplayer"],
   },
@@ -35,7 +35,7 @@ const careerProjects: CareerProject[] = [
     period: "2017 - 2021",
     description:
       "Led a team of 5 engineers on this official licensed Formula One management game; from prototyping through to worldwide launch. F1 Clash is a multiplayer strategy game in which you issue commands to your drivers in real-time, server-authoritative, 3D races.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/Header_Capsule.png",
     technologies: ["Unity", "C#", "Real-time Networking", "Physics"],
     achievements: [
       "Responsible for physics, AI and networking",
@@ -50,8 +50,8 @@ const careerProjects: CareerProject[] = [
     role: "Client Engineer",
     period: "2012 - 2017",
     description:
-      "Led the iOS and Android port of this popular MMO strategy game, as well as providing ongoing support for the MacOS version. Set up and maintained the internal multi-node build pipeline using Unity, Jenkins, and fastlane for iOS, Android and MacOS.",
-    image: "/placeholder.svg?height=600&width=800",
+      "Ported this popular MMO strategy game from a Windows Forms desktop application to Unity on iOS and Android, as well as providing ongoing support for the MacOS version. Set up and maintained the internal multi-node build pipeline using Unity, Jenkins, and fastlane for iOS, Android and MacOS.",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/stronghold-kingdoms-47410-header-2WHdoFzcLqmzgRPMIDLy43moocqq9e.jpg",
     technologies: ["Unity", "C#", "iOS", "Android", "CI/CD"],
     achievements: ["Led mobile port development", "Built multi-node build pipeline", "Cross-platform deployment"],
   },
