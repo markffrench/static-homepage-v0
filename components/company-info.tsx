@@ -9,9 +9,7 @@ export default function CompanyInfo() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight uppercase sm:text-4xl mb-4">Divide The Plunder</h2>
           <p className="text-muted-foreground mb-6">
-            Founded in August 2021, Divide The Plunder is an independent game studio focused on creating thoughtful
-            puzzle games that challenge the mind without frustrating the player. My games feature procedurally
-            generated puzzles of pure deduction, you never have to guess!
+            Founded in August 2021, Divide The Plunder is an independent game studio focused on creating thoughtful and relaxing puzzle games. My puzzles all feature smart procedurally generated solutions, making them works of <i>pure deduction</i>. You <b>never</b> have to guess!
           </p>
         </div>
       </div>

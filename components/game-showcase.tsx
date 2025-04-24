@@ -32,7 +32,7 @@ const games: Game[] = [
       "Another Mosaic puzzle game focusing on Ancient Egypt. This was a slight shadow drop on steam, so it hasn't performed as well as the other titles yet, but I'm optimistic that it will do well in the longer term.",
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/mosaic-of-the-pharaohs-3530670-header-PVskn6aoxWVjmYGjcXETzzWYjxb9NH.jpg",
-    tags: ["Historical", "Educational", "Mosaic"],
+    tags: ["Mosaic", "Historical", "Relaxing"],
     link: "https://store.steampowered.com/app/3530670/Mosaic_of_The_Pharaohs",
     releaseDate: "Mar 2025",
     reviewScore: "100% (20) Positive",
@@ -45,7 +45,7 @@ const games: Game[] = [
       "A free charity-fundraising mosaic game that I released to raise money for UNICEF. The game features a round-up of major global news stories from 2024.",
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/2024-mosaic-retrospective-3380760-header-gHyWM20YoCw585kzOMOtdszgBWkaAD.jpg",
-    tags: ["Mosaic", "Pixel Art", "Charity"],
+    tags: ["Mosaic", "Global News", "Charity", "Relaxing"],
     link: "https://store.steampowered.com/app/3380760/2024_Mosaic_Retrospective/",
     releaseDate: "Dec 2024",
     reviewScore: "87% (400+) Very Positive",
@@ -57,11 +57,10 @@ const games: Game[] = [
     description:
       "A sequel to Mega Mosaic. A huge, meditative, minesweeper-like puzzle, where you fill in a pixelart recreation of the 1559 painting Netherlandish Proverbs by Bruegel the Elder.",
     image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/proverbs-D2yD1RgR1xH5hCmooCxfE97TFBxdbm.jpg",
-    tags: ["Puzzle", "Meditative", "Pixel Art"],
+    tags: ["Mosaic", "Historical", "Relaxing"],
     link: "https://store.steampowered.com/app/3083300/Proverbs/",
     featured: true,
     releaseDate: "Nov 2024",
-    press: ["Rock Paper Shotgun", "Automaton (JP)"],
     reviewScore: "98% (400+) Very Positive",
     status: "shipped",
   },
@@ -72,7 +71,7 @@ const games: Game[] = [
       "A meditative puzzle game where players slowly solve an enormous minesweeper-like puzzle. As players complete different regions of the puzzle, they're rewarded with pixel art illustrations that reveal themselves, as well as earning nearly 100 achievements for various challenges.",
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/mega-mosaic-2915950-header-EMetVM1lOmPxrixBwSf3k0Du2jCdcO.jpg",
-    tags: ["Mosaic", "Puzzle", "Pixel Art"],
+    tags: ["Mosaic", "Pixel Art", "Relaxing"],
     link: "https://store.steampowered.com/app/2915950/Mega_Mosaic/",
     featured: true,
     releaseDate: "May 2024",
@@ -86,7 +85,7 @@ const games: Game[] = [
       "A cute and casual logic puzzle game. Players journey through 12 different themed areas of a seaside town meeting different animal characters that live there. They'll solve challenging Logic Puzzles, and get to redecorate dioramas of different shops and venues in the town that are in need of repair.",
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/logic-town-2333240-header-LHUKWOZooVQArF8aj8FIr60qJkYm8G.jpg",
-    tags: ["Logic", "Adventure", "PC"],
+    tags: ["Logic", "Leaderboards", "Daily Challenge", "DLC"],
     link: "https://store.steampowered.com/app/2333240/Logic_Town/",
     featured: true,
     releaseDate: "Nov 2023",
@@ -116,10 +115,8 @@ export default function GameShowcase() {
     <section id="games" className="py-16 md:py-24">
       <div className="container">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight uppercase sm:text-4xl mb-4">Portfolio</h2>
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-2 uppercase">DIVIDE THE PLUNDER</h3>
-            <p className="text-muted-foreground mb-2">Founder & Solo Developer</p>
+            <h3 className="text-2xl font-bold mb-2 uppercase">Founder & Solo Developer</h3>
             <p className="text-sm text-muted-foreground">AUG 2021 - PRESENT</p>
           </div>
         </div>
