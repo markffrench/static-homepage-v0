@@ -47,3 +47,9 @@
     opacity: 0;
   }
 }
+
+/* Custom aspect ratio for game thumbnails */
+.aspect-game-thumbnail {
+  position: relative;
+  padding-bottom: 46.7%; /* 215/460 = 0.467 or 46.7% */
+}
