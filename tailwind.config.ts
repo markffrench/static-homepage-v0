@@ -58,6 +58,10 @@ const config = {
           light: "#112240",
           dark: "#020c1b",
         },
+        steam: {
+          blue: "#66C0F4",
+          green: "#66C0A4",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

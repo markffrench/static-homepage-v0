@@ -81,17 +81,17 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative aspect-square overflow-hidden rounded-lg">
+          <div className="relative flex justify-center">
+            <div className="relative w-1/2 aspect-square overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/20170508_113800-Jrlp8bVO0WbiMuLaQMCqgAHluQnMwK.jpg"
                 alt="Game Developer Portrait"
                 fill
                 className="object-cover"
               />
             </div>
 
-            <div className="absolute -bottom-6 -right-6 w-64">
+            <div className="absolute -bottom-6 right-0 w-64">
               <Card>
                 <CardContent className="p-4">
                   <div className="space-y-2">

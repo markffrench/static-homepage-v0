@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ExternalLink } from "lucide-react"
+import { ExternalLink, Star } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -20,6 +20,8 @@ interface Game {
   featured?: boolean
   releaseDate?: string
   press?: string[]
+  reviewScore?: string
+  status: "shipped" | "upcoming"
 }
 
 const games: Game[] = [
@@ -33,6 +35,8 @@ const games: Game[] = [
     tags: ["Historical", "Educational", "Mosaic"],
     link: "https://store.steampowered.com/app/3530670/Mosaic_of_The_Pharaohs",
     releaseDate: "Mar 2025",
+    reviewScore: "100% (20) Positive",
+    status: "shipped",
   },
   {
     id: "mosaic-retrospective",
@@ -44,6 +48,8 @@ const games: Game[] = [
     tags: ["Mosaic", "Pixel Art", "Charity"],
     link: "https://store.steampowered.com/app/3380760/2024_Mosaic_Retrospective/",
     releaseDate: "Dec 2024",
+    reviewScore: "87% (400+) Very Positive",
+    status: "shipped",
   },
   {
     id: "proverbs",
@@ -56,6 +62,8 @@ const games: Game[] = [
     featured: true,
     releaseDate: "Nov 2024",
     press: ["Rock Paper Shotgun", "Automaton (JP)"],
+    reviewScore: "98% (400+) Very Positive",
+    status: "shipped",
   },
   {
     id: "mega-mosaic",
@@ -68,6 +76,8 @@ const games: Game[] = [
     link: "https://store.steampowered.com/app/2915950/Mega_Mosaic/",
     featured: true,
     releaseDate: "May 2024",
+    reviewScore: "93% (150+) Very Positive",
+    status: "shipped",
   },
   {
     id: "logic-town",
@@ -80,6 +90,8 @@ const games: Game[] = [
     link: "https://store.steampowered.com/app/2333240/Logic_Town/",
     featured: true,
     releaseDate: "Nov 2023",
+    reviewScore: "98% (150+) Very Positive",
+    status: "shipped",
   },
   {
     id: "shithead",
@@ -91,13 +103,14 @@ const games: Game[] = [
     tags: ["Card Game", "Multiplayer", "Coming Soon"],
     link: "https://store.steampowered.com/app/2809950/Shthead",
     releaseDate: "TBA",
+    status: "upcoming",
   },
 ]
 
 export default function GameShowcase() {
-  const [activeTab, setActiveTab] = useState("featured")
-  const featuredGames = games.filter((game) => game.featured)
-  const allGames = games
+  const [activeTab, setActiveTab] = useState("shipped")
+  const shippedGames = games.filter((game) => game.status === "shipped")
+  const upcomingGames = games.filter((game) => game.status === "upcoming")
 
   return (
     <section id="games" className="py-16 md:py-24">
@@ -111,25 +124,25 @@ export default function GameShowcase() {
           </div>
         </div>
 
-        <Tabs defaultValue="featured" className="w-full" onValueChange={setActiveTab}>
+        <Tabs defaultValue="shipped" className="w-full" onValueChange={setActiveTab}>
           <div className="flex justify-center mb-8">
             <TabsList>
-              <TabsTrigger value="featured">Featured Games</TabsTrigger>
-              <TabsTrigger value="all">All Games</TabsTrigger>
+              <TabsTrigger value="shipped">Shipped Games</TabsTrigger>
+              <TabsTrigger value="upcoming">Upcoming Games</TabsTrigger>
             </TabsList>
           </div>
 
-          <TabsContent value="featured" className="space-y-8">
+          <TabsContent value="shipped" className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {featuredGames.map((game) => (
+              {shippedGames.map((game) => (
                 <GameCard key={game.id} game={game} />
               ))}
             </div>
           </TabsContent>
 
-          <TabsContent value="all" className="space-y-8">
+          <TabsContent value="upcoming" className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {allGames.map((game) => (
+              {upcomingGames.map((game) => (
                 <GameCard key={game.id} game={game} />
               ))}
             </div>
@@ -176,6 +189,12 @@ function GameCard({ game }: { game: Game }) {
             </Badge>
           ))}
         </div>
+        {game.reviewScore && (
+          <div className="flex items-center gap-1 mt-2 text-sm" style={{ color: "#66C0F4" }}>
+            <Star className="h-4 w-4" style={{ fill: "#66C0F4" }} />
+            <span>{game.reviewScore}</span>
+          </div>
+        )}
       </CardHeader>
       <CardContent>
         <CardDescription className="text-sm">{game.description}</CardDescription>
