@@ -6,17 +6,23 @@ import AboutSection from "@/components/about-section"
 import ContactSection from "@/components/contact-section"
 import CareerHighlights from "@/components/career-highlights"
 import CompanyInfo from "@/components/company-info"
+import MobileMenuButton from "@/components/mobile-menu-button"
+import MobileMenuContainer from "@/components/mobile-menu-container"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-navy/95 backdrop-blur supports-[backdrop-filter]:bg-navy/60">
+      {/* Mobile Menu Container - Rendered at root level */}
+      <MobileMenuContainer />
+
+      <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-navy/95 backdrop-blur supports-[backdrop-filter]:bg-navy/60">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-2 items-center text-xl font-bold">
             <span>MARK FFRENCH</span>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
-            <nav className="flex items-center space-x-6">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-6">
               <Link href="#games" className="text-sm font-medium uppercase hover:text-primary">
                 Portfolio
               </Link>
@@ -50,6 +56,9 @@ export default function Home() {
                 <ExternalLink className="h-3 w-3" />
               </Link>
             </nav>
+
+            {/* Mobile Menu Button - Only the button is in the header */}
+            <MobileMenuButton />
           </div>
         </div>
       </header>
