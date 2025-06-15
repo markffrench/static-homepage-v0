@@ -1,9 +1,12 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
+import { trackExternalLink } from "@/lib/analytics"
 
 interface CareerProject {
   id: string
@@ -123,7 +126,12 @@ export default function CareerHighlights() {
               </CardContent>
               <div className="p-4 pt-0 mt-auto">
                 <Button variant="outline" size="sm" className="w-full" asChild>
-                  <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackExternalLink(project.title, project.link)}
+                  >
                     <span>Visit Website</span>
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </Link>
