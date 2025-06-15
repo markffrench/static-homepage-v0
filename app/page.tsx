@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 import { Github, Mail, ExternalLink, Twitter, Linkedin, Youtube } from "lucide-react"
 import GameShowcase from "@/components/game-showcase"
@@ -10,7 +8,6 @@ import CareerHighlights from "@/components/career-highlights"
 import CompanyInfo from "@/components/company-info"
 import MobileMenuButton from "@/components/mobile-menu-button"
 import MobileMenuContainer from "@/components/mobile-menu-container"
-import { trackExternalLink, trackCVDownload } from "@/lib/analytics"
 
 export default function Home() {
   return (
@@ -37,7 +34,6 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium uppercase hover:text-primary"
-                onClick={() => trackCVDownload()}
               >
                 CV
               </Link>
@@ -46,9 +42,6 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium uppercase hover:text-primary flex items-center gap-1"
-                onClick={() =>
-                  trackExternalLink("Steam Store", "https://store.steampowered.com/developer/divide-the-plunder")
-                }
               >
                 Steam
                 <ExternalLink className="h-3 w-3" />
@@ -58,7 +51,6 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium uppercase hover:text-primary flex items-center gap-1"
-                onClick={() => trackExternalLink("Itch.io", "https://mark-ffrench.itch.io/")}
               >
                 Itch.io
                 <ExternalLink className="h-3 w-3" />

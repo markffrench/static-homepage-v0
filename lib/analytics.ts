@@ -1,39 +1,37 @@
-import { sendGAEvent } from "@next/third-parties/google"
+declare global {
+  interface Window {
+    gtag: (command: string, targetId: string, config?: Record<string, any>) => void
+  }
+}
 
-// Custom event tracking functions
+export const trackEvent = (eventName: string, parameters?: Record<string, any>) => {
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", eventName, parameters)
+  }
+}
+
 export const trackGameClick = (gameName: string, platform: string) => {
-  sendGAEvent("event", "game_click", {
+  trackEvent("game_click", {
     game_name: gameName,
     platform: platform,
-    value: 1,
   })
 }
 
-export const trackExternalLink = (linkName: string, destination: string) => {
-  sendGAEvent("event", "external_link_click", {
+export const trackExternalLink = (linkName: string, url: string) => {
+  trackEvent("external_link_click", {
     link_name: linkName,
-    destination: destination,
-    value: 1,
+    destination_url: url,
   })
 }
 
-export const trackContactFormSubmit = () => {
-  sendGAEvent("event", "contact_form_submit", {
-    form_name: "contact_form",
-    value: 1,
+export const trackFormSubmission = (formName: string) => {
+  trackEvent("form_submission", {
+    form_name: formName,
   })
 }
 
-export const trackCVDownload = () => {
-  sendGAEvent("event", "cv_download", {
-    document_type: "cv",
-    value: 1,
-  })
-}
-
-export const trackSectionView = (sectionName: string) => {
-  sendGAEvent("event", "section_view", {
-    section_name: sectionName,
-    value: 1,
+export const trackDownload = (fileName: string) => {
+  trackEvent("file_download", {
+    file_name: fileName,
   })
 }

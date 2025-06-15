@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
-import { trackGameClick } from "@/lib/analytics"
 
 interface Game {
   id: string
@@ -94,6 +93,17 @@ const games: Game[] = [
     status: "shipped",
   },
   {
+    id: "mosaic-strange",
+    title: "MOSAIC OF THE STRANGE",
+    description:
+      "The fifth entry in the Mega Mosaic series, Mosaic of the Strange is a deep dive into world of the paranormal.",
+    image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/Header_Capsule-RsXTd92AoTz2KwrzCn6TI8wD7dTSQo.png",
+    tags: ["Mosaic", "Paranormal", "Coming Soon"],
+    link: "https://store.steampowered.com/app/3444650/Mosaic_of_the_Strange/",
+    releaseDate: "24th Oct 2025",
+    status: "upcoming",
+  },
+  {
     id: "shithead",
     title: "SH*THEAD",
     description:
@@ -154,13 +164,7 @@ export default function GameShowcase() {
 function GameCard({ game }: { game: Game }) {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg">
-      <Link
-        href={game.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-        onClick={() => trackGameClick(game.title, "Steam")}
-      >
+      <Link href={game.link} target="_blank" rel="noopener noreferrer" className="block">
         <div className="relative overflow-hidden" style={{ paddingBottom: "46.7%" }}>
           <Image
             src={game.image || "/placeholder.svg"}
@@ -207,12 +211,7 @@ function GameCard({ game }: { game: Game }) {
       </CardContent>
       <CardFooter>
         <Button variant="outline" size="sm" className="w-full" asChild>
-          <Link
-            href={game.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => trackGameClick(game.title, "Steam")}
-          >
+          <Link href={game.link} target="_blank" rel="noopener noreferrer">
             <span>View Game</span>
             <ExternalLink className="ml-2 h-4 w-4" />
           </Link>

@@ -6,7 +6,6 @@ import { useActionState } from "react"
 import { toast } from "@/components/ui/use-toast"
 import { sendEmail, type FormState } from "@/actions/send-email"
 import { useEffect } from "react"
-import { trackContactFormSubmit } from "@/lib/analytics"
 
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -17,7 +16,6 @@ export default function ContactSection() {
   useEffect(() => {
     if (formState.success) {
       setIsCompleted(true)
-      trackContactFormSubmit() // Add this line
       toast({
         title: "Message sent!",
         description: "Thanks for reaching out. We'll get back to you soon.",
