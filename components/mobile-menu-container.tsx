@@ -65,7 +65,7 @@ export default function MobileMenuContainer() {
             CV
           </Link>
           <Link
-            href="https://store.steampowered.com/developer/divide-the-plunder?utm_source=portfolio&utm_medium=website&utm_campaign=mobile_nav&utm_content=steam_developer"
+            href="https://store.steampowered.com/developer/divide-the-plunder"
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg font-medium uppercase hover:text-primary flex items-center gap-2"

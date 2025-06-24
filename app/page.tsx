@@ -38,7 +38,7 @@ export default function Home() {
                 CV
               </Link>
               <Link
-                href="https://store.steampowered.com/developer/divide-the-plunder?utm_source=portfolio&utm_medium=website&utm_campaign=header_nav&utm_content=steam_developer"
+                href="https://store.steampowered.com/developer/divide-the-plunder"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium uppercase hover:text-primary flex items-center gap-1"
@@ -72,26 +72,9 @@ export default function Home() {
       </main>
       <footer className="border-t border-border/40 py-6 md:py-0 bg-navy-dark">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <div className="flex flex-col md:flex-row items-center gap-4">
-            <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-              © 2025 Divide The Plunder Ltd. All rights reserved.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-sm">
-              <Link
-                href="/logic-town-privacy-policy"
-                className="text-muted-foreground hover:text-foreground hover:underline"
-              >
-                Logic Town Privacy Policy
-              </Link>
-              <span className="hidden sm:inline text-muted-foreground">|</span>
-              <Link
-                href="/mosaic-series-privacy-policy"
-                className="text-muted-foreground hover:text-foreground hover:underline"
-              >
-                Mosaic Series Privacy Policy
-              </Link>
-            </div>
-          </div>
+          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+            © 2025 Divide The Plunder Ltd. All rights reserved.
+          </p>
           <div className="flex items-center gap-4">
             <Link
               href="https://github.com/markffrench/"
