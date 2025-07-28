@@ -33,7 +33,7 @@ const games: Game[] = [
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/mosaic-of-the-pharaohs-3530670-header-PVskn6aoxWVjmYGjcXETzzWYjxb9NH.jpg",
     tags: ["Mosaic", "Historical", "Relaxing"],
-    link: "https://store.steampowered.com/app/3530670/Mosaic_of_The_Pharaohs",
+    link: "https://store.steampowered.com/app/3530670/Mosaic_of_The_Pharaohs?utm_source=portfolio&utm_medium=website&utm_campaign=game_showcase&utm_content=pharaohs",
     releaseDate: "Mar 2025",
     reviewScore: "100% (20) Positive",
     status: "shipped",
@@ -46,7 +46,7 @@ const games: Game[] = [
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/2024-mosaic-retrospective-3380760-header-gHyWM20YoCw585kzOMOtdszgBWkaAD.jpg",
     tags: ["Mosaic", "Global News", "Charity", "Relaxing"],
-    link: "https://store.steampowered.com/app/3380760/2024_Mosaic_Retrospective/",
+    link: "https://store.steampowered.com/app/3380760/2024_Mosaic_Retrospective/?utm_source=portfolio&utm_medium=website&utm_campaign=game_showcase&utm_content=retrospective",
     releaseDate: "Dec 2024",
     reviewScore: "87% (400+) Very Positive",
     status: "shipped",
@@ -58,7 +58,7 @@ const games: Game[] = [
       "A sequel to Mega Mosaic. A huge, meditative, minesweeper-like puzzle, where you fill in a pixelart recreation of the 1559 painting Netherlandish Proverbs by Bruegel the Elder.",
     image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/proverbs-D2yD1RgR1xH5hCmooCxfE97TFBxdbm.jpg",
     tags: ["Mosaic", "Historical", "Relaxing"],
-    link: "https://store.steampowered.com/app/3083300/Proverbs/",
+    link: "https://store.steampowered.com/app/3083300/Proverbs/?utm_source=portfolio&utm_medium=website&utm_campaign=game_showcase&utm_content=proverbs",
     featured: true,
     releaseDate: "Nov 2024",
     reviewScore: "98% (400+) Very Positive",
@@ -72,7 +72,7 @@ const games: Game[] = [
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/mega-mosaic-2915950-header-EMetVM1lOmPxrixBwSf3k0Du2jCdcO.jpg",
     tags: ["Mosaic", "Pixel Art", "Relaxing"],
-    link: "https://store.steampowered.com/app/2915950/Mega_Mosaic/",
+    link: "https://store.steampowered.com/app/2915950/Mega_Mosaic/?utm_source=portfolio&utm_medium=website&utm_campaign=game_showcase&utm_content=mega_mosaic",
     featured: true,
     releaseDate: "May 2024",
     reviewScore: "93% (150+) Very Positive",
@@ -86,7 +86,7 @@ const games: Game[] = [
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/logic-town-2333240-header-LHUKWOZooVQArF8aj8FIr60qJkYm8G.jpg",
     tags: ["Logic", "Leaderboards", "Daily Challenge", "DLC"],
-    link: "https://store.steampowered.com/app/2333240/Logic_Town/",
+    link: "https://store.steampowered.com/app/2333240/Logic_Town/?utm_source=portfolio&utm_medium=website&utm_campaign=game_showcase&utm_content=logic_town",
     featured: true,
     releaseDate: "Nov 2023",
     reviewScore: "98% (150+) Very Positive",
@@ -99,7 +99,7 @@ const games: Game[] = [
       "The fifth entry in the Mega Mosaic series, Mosaic of the Strange is a deep dive into world of the paranormal.",
     image: "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/Header_Capsule-RsXTd92AoTz2KwrzCn6TI8wD7dTSQo.png",
     tags: ["Mosaic", "Paranormal", "Coming Soon"],
-    link: "https://store.steampowered.com/app/3444650/Mosaic_of_the_Strange/",
+    link: "https://store.steampowered.com/app/3444650/Mosaic_of_the_Strange/?utm_source=portfolio&utm_medium=website&utm_campaign=game_showcase&utm_content=strange",
     releaseDate: "24th Oct 2025",
     status: "upcoming",
   },
@@ -111,7 +111,7 @@ const games: Game[] = [
     image:
       "https://fy5ikdxljqpixjc2.public.blob.vercel-storage.com/shthead-2809950-header-IIQxW9LDmYuQ2SWOtV0ulVFM67RLmy.jpg",
     tags: ["Card Game", "Multiplayer", "Coming Soon"],
-    link: "https://store.steampowered.com/app/2809950/Shthead",
+    link: "https://store.steampowered.com/app/2809950/Shthead?utm_source=portfolio&utm_medium=website&utm_campaign=game_showcase&utm_content=shithead",
     releaseDate: "TBA",
     status: "upcoming",
   },
